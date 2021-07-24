@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn btn-primary" onclick="countWords()">Click Here</button>
+    <script>
+        function countWords(){
+            var input="she sells sea shells on tne see shore";
+            var letterCount=0;
+            var wordsInInput=input.split(" ");
+            for(var i=0;i<input.length;i++)
+            {
+                letterCount++;
+            }
+            document.write(wordsInInput.length+" "+letterCount);
+        }
+    </script>
+</body>
+</html>

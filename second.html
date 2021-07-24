@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn btn-primary" onclick="checkForPalindrome()">Click Here</button>
+    <script>
+        function checkForPalindrome(){
+            var input="Madam";
+            var str=input.toLowerCase();
+            var reversedString="";
+            var count=0;
+            for(var i of str)
+            {
+                reversedString=reversedString+i;
+            }
+            for(var j=0;j<reversedString.length;j++)
+            {
+                if(str.charAt(j)==reversedString.charAt(j))
+                {
+                     count++;
+                }
+            }
+            if(count==str.length)
+            {
+                document.write(true);
+            }
+            else{
+                document.write(false);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn btn-primary" onclick="reverseArray()">Click Here</button>
+    <script>
+        function reverseArray(){
+           var input=[0,1,false,2, 5,'',3,null];
+           var arr=[];
+           var len=input.length;          
+           var j=0;
+            for(var i=0;i<len;i++)
+            {
+                if(isNaN(input[i]) || input[i]==0 || input[i]===true || input[i]===false)
+                {
+
+                }
+                else
+                {
+                    arr[j]=input[i];
+                    j++;
+                }
+            }
+            document.write(input);
+            document.write(arr);
+        }
+    </script>
+</body>
+</html>
